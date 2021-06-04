@@ -3,7 +3,7 @@
 import string
 import random
 
-__version__ = "0.2.0"
+__version__ = "0.1.1"
 
 SYMBOLS = list(string.printable.strip()[62:])
 VOWELS = list("euioaEUIOA")
