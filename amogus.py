@@ -3,7 +3,7 @@
 import string
 import random
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 SYMBOLS = list(string.printable.strip()[62:])
 VOWELS = list("euioaEUIOA")
@@ -44,14 +44,15 @@ def amogusify(text: str, emoji: bool = False) -> str:
                 word = word[:sym_count]
 
             if len(word) > 2:
-                if word[-1] in VOWELS:
-                    word = word[:-1]
-                    word += "us"
-                else:
-                    if word != " ":
+                if word[-2:].lower() != "us":
+                    if word[-1] in VOWELS:
+                        word = word[:-1]
                         word += "us"
+                    else:
+                        if word != " ":
+                            word += "us"
             elif len(word) > 1:
-                if word != " ":
+                if word != " " and word.lower() != "us":
                     word += "us"
             else:
                 if word[-1] in VOWELS:
