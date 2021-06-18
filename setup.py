@@ -2,7 +2,7 @@ import setuptools
 from amogus import __version__ as version
 
 metadata = {
-	"name": "Amogus",
+	"name": "sus-amogus",
 	"version": version,
 	"description": "sus",
 	"author": "HugeBrain16",
