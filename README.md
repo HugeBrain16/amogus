@@ -3,13 +3,7 @@ idk what is this... sus
 
 ## Installation
 
-on windows:  
-`python -m pip install git+https://github.com/HugeBrain16/amogus.git`  
-`pip install git+https://github.com/HugeBrain16`
-  
-on linux and macos?:  
-`python3 -m pip install git+https://github.com/HugeBrain/amogus.git`  
-`pip3 install git+https://github.com/HugeBrain16/amogus.git`
+`pip install sus-amogus`
 
 ## Example
 
